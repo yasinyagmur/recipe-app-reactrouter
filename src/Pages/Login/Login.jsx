@@ -2,14 +2,18 @@ import React from "react";
 import meal from "../../assets/meal.svg";
 import "./Login.css";
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const [login, setLogin] = useState({ username: "", password: "" });
+  const [login, setLogin] = useState({ username: "", password: "" }); 
+  const navigate = useNavigate();
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
     sessionStorage.setItem("loginUser", JSON.stringify(login));
     setLogin({ username: "", password: "" });
+    navigate("home");
   };
   const handleChange = (e) => {
     setLogin({
