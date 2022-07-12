@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
-const RecipeCard = () => {
+const RecipeCard = ({ recipe }) => {
+  const { label, image } = recipe;
   return (
-    <div>RecipeCard</div>
-  )
-}
+    <article>
+      <h3>{label}</h3>
+      <div className="imageDiv">
+        <img src={image} alt={label} />
+      </div>
+      <button>Details</button>
+    </article>
+  );
+};
 
-export default RecipeCard
+export default RecipeCard;
