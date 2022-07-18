@@ -18,3 +18,10 @@ article {
   width: 20rem;
   height: 23vh;
 }
+@media screen and (max-width: 600px) {
+  article{
+    display: flex;
+    flex-direction: column;
+  }
+
+}
