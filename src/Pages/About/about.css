@@ -1,0 +1,18 @@
+.textAbout {
+  text-align: end;
+  margin-right: 2rem;
+  border: 1px solid black;
+  width: 70%;
+  padding-right: 1rem;
+}
+.aboutDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 20vh;
+}
+.emailText{
+    color: darkred;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
