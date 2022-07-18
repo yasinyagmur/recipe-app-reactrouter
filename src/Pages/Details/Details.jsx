@@ -10,9 +10,9 @@ const Details = () => {
     <div className="mainContainer">
       <div className="headerContainer">
         <h1>{state.label}</h1>
-        <img src={dietSvg} alt="" />
+        <img className="detailImg" src={dietSvg} alt="" />
       </div>
-      <div wrap="wrap">
+      
         <div>
           <h4>NUTRIENTS</h4>
           <p>
@@ -44,7 +44,7 @@ const Details = () => {
           ))}
         </div>
         <div>
-          <img src={state.image} alt="" />
+          <img className="detailImg" src={state.image} alt="" />
         </div>
         <div>
           {state.ingredientLines.map((line, index) => (
@@ -55,7 +55,6 @@ const Details = () => {
               <br />
             </div>
           ))}
-        </div>
       </div>
     </div>
   );

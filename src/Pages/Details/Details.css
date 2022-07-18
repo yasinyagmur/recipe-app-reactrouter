@@ -1,0 +1,20 @@
+.mainContainer{
+    display: grid;
+grid-template-columns: auto auto auto auto;
+gap: 0.5rem;
+align-items: center;
+margin-top: 5rem;
+padding: 5rem;
+}
+
+.detailImg{
+    width: 17rem;
+}
+
+@media screen and (max-width: 600px) {
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+  }
