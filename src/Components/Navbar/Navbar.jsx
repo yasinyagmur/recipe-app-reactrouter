@@ -5,7 +5,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="navbarDiv">
       <ul>
         <li>
           <a href="http://github.com/yasinyagmur" target="blank">
@@ -15,7 +15,7 @@ const Navbar = () => {
       </ul>
       <ul>
         <li>
-          <NavLink to="/home">Recipe</NavLink>
+          <NavLink to="/home">Home</NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
