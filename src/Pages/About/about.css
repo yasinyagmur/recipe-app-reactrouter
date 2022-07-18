@@ -10,9 +10,18 @@
   align-items: center;
   margin-top: 20vh;
 }
-.emailText{
-    color: darkred;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.1rem;
-    font-weight: 600;
+.emailText {
+  color: darkred;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+@media only screen and (max-width: 600px) {
+  .aboutDiv {
+    display: flex;
+    flex-direction: column;
+  }
+  .textAbout {
+    text-align: center;
+  }
 }
