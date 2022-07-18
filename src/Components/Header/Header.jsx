@@ -7,7 +7,7 @@ const Header = () => {
     <header>
       <ul>
         <li>
-          <a href="http://github.com/yasinyagmur" target="blank">Link For Recipe Project <FaGithub size={20}/></a>
+          <a href="http://github.com/yasinyagmur" target="blank">Link For Recipe Project Github <FaGithub size={20}/></a>
         </li>
       </ul>
       <ul>
