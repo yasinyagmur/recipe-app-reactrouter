@@ -18,7 +18,7 @@ const AppRouter = () => {
           <Route path="/about" element={<About />} />
         </Route>
         <Route path="/details" element={<PrivateRouter />}>
-          <Route path="/details/:label" element={<Details />} />
+          <Route path="/details" element={<Details />} />
         </Route>
         <Route path="*" element={<Home />} />
       </Routes>

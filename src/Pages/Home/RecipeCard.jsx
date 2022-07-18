@@ -1,14 +1,22 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
+import './RecipeCards.css'
 
-const RecipeCard = ({ recipe }) => {
-  const { label, image } = recipe;
+const RecipeCard = ({ recipes }) => {
+  // console.log(recipes);
+  const navigate = useNavigate();
+
   return (
-    <article>
-      <h3>{label}</h3>
-      <div className="imageDiv">
-        <img src={image} alt={label} />
-      </div>
-      <button>Details</button>
+    <article >
+      {recipes.map(({ recipe }, index) => (
+        <div key={index} className="container" >
+          <h3>{recipe.label}</h3>
+          <img className="imgContainer" src={recipe.image} alt={recipe.label} srcset="" />
+          <button className="cardButton" onClick={() => navigate("/details", { state: recipe })}>
+            View More
+          </button>
+        </div>
+      ))}
     </article>
   );
 };
