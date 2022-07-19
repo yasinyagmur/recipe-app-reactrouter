@@ -9,8 +9,8 @@ const Home = () => {
   const [query, setQuery] = useState("");
   const [recipes, setRecipes] = useState([]);
 
-  const APP_ID = "b6838f99";
-  const APP_KEY = "73c81a31558f4c406a0ade6de393a72a";
+  const APP_ID = process.env.REACT_APP_APP_ID
+  const APP_KEY = process.env.REACT_APP_APP_KEY;
   const url = `https://api.edamam.com/search?q=${query}&app_id=${APP_ID}&app_key=${APP_KEY}&mealType=${meal}`;
 
   const getData = async () => {
